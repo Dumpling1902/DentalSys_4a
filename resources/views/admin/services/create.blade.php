@@ -14,11 +14,23 @@
 ]">
 
 <x-wire-card>
-    <form action="{{route('admin.services.store')}}" method="POST">
+    <form action="{{ route('admin.services.store') }}" method="POST">
         @csrf
 
-        <x-wire-input label="Nombre" name="name" placeholder="Nombre del servicio" value="{{old('name')}}">
+        <x-wire-input 
+            label="Nombre" 
+            name="name" 
+            placeholder="Nombre del servicio" 
+            value="{{ old('name') }}">
         </x-wire-input>
+
+        <x-wire-input 
+            label="Precio" 
+            name="price" 
+            placeholder="Precio del servicio" 
+            value="{{ old('price') }}">
+        </x-wire-input>
+
         <div class="flex justify-end mt-4">
             <x-wire-button type="submit" blue>Guardar</x-wire-button>
         </div>

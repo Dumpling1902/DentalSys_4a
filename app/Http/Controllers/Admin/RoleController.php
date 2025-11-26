@@ -39,12 +39,12 @@ class RoleController extends Controller
         session()->flash('swal',
         [
             'icon' => 'success',
-            'title' => 'Rol creado correctamente',
-            'text' => 'El rol ha sido creado exitosamente'
+            'title' => 'Especialista creado correctamente',
+            'text' => 'El especialista ha sido creado exitosamente'
         ]);
 
         //Redireccionara a la tabla principal
-        return redirect()->route('admin.roles.index')->with('success', 'Role created successfully');
+        return redirect()->route('admin.roles.index')->with('success', 'Specialist created successfully');
     }
 
     /**
@@ -67,7 +67,7 @@ class RoleController extends Controller
             [
                 'icon' => 'error',
                 'title' => 'Error',
-                'text' => 'No puedes editar este rol.'
+                'text' => 'No puedes editar este especialista.'
             ]);
 
             //Redirecciona al mismo lugar
@@ -106,8 +106,8 @@ class RoleController extends Controller
         session()->flash('swal',
         [
             'icon' => 'success',
-            'title' => 'Rol actualizado correctamente',
-            'text' => 'El rol ha sido actualizado exitosamente'
+            'title' => 'Especialista actualizado correctamente',
+            'text' => 'El especialista ha sido actualizado exitosamente'
         ]);
 
         //Redireccionara a la tabla principal
@@ -127,7 +127,7 @@ class RoleController extends Controller
             [
                 'icon' => 'error',
                 'title' => 'Error',
-                'text' => 'No se puede eliminar este rol.'
+                'text' => 'No se puede eliminar este especialista.'
             ]);
 
             //Redirecciona al mismo lugar
@@ -141,8 +141,8 @@ class RoleController extends Controller
         session()->flash('swal',
         [
             'icon' => 'success',
-            'title' => 'Rol eliminado correctamente',
-            'text' => 'El rol ha sido eliminado exitosamente'
+            'title' => 'Especialista eliminado correctamente',
+            'text' => 'El especialista ha sido eliminado exitosamente'
         ]);
 
         //Redireccionara a la tabla principal
